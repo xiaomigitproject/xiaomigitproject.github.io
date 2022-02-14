@@ -20,6 +20,17 @@ const swiper = new Swiper('.horizontal_swiper', {
     lazy: {
       loadPrevNext: true,
     },
+
+    breakpoints: {
+    320: {
+      direction: 'horizontal',
+    },
+
+    450: {
+      direction: 'vertical',
+    }
+    }
+
   //   effect: 'fade',
   // fadeEffect: {
   //   crossFade: true
