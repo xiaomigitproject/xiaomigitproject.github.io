@@ -533,7 +533,7 @@ header > div{
 .scooter_block{
     margin-top: 340px;
     position: relative;
-    z-index: 10;
+    z-index: 4;
 }
 
 .scooter_block_bg, .scooter_block_bg_second{
