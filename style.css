@@ -200,10 +200,26 @@ body{
     flex-direction: column;
     row-gap: 4px;
     position: absolute;
-    z-index: 20;
+    z-index: 120;
     right: 0;
     transition: all .3s linear;
+}
 
+.burger_btn.open{
+    background: transparent;
+}
+
+.burger_btn.open > .burger_line{
+    background-color: #F1F1F1;
+    transition: all .3s linear;
+}
+
+.burger_btn.open > .burger_line:first-child{
+    transform: translate(-10px, -5px);
+}
+
+.burger_btn.open > .burger_line:last-child{
+    transform: translate(10px, 5px);
 }
 
 .burger_line{
@@ -212,6 +228,7 @@ body{
     border-radius: 4px;
     width: 50%;
     z-index: 21;
+    transition: all .3s linear;
 }
 
 .burger_menu{
@@ -223,7 +240,7 @@ body{
     right: 0;
     height: 100%;
     width: 100%;
-    z-index: 150;
+    z-index: 100;
     transform: translateX(100%);
     transition: all .3s linear;
     display: flex;
