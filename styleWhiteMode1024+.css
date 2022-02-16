@@ -1,0 +1,165 @@
+
+.page_white_mode .header_nav > a{
+    color: #151515;
+}
+
+.page_white_mode .header_nav > a:last-child{
+    margin-left: 5px;
+    color: #ff4C0D;
+}
+
+.page_white_mode header > div > svg > path{
+    fill: #FF4C0D;
+}
+
+.page_white_mode .under_header_block > h1{
+    color: #FF4C0D;
+}
+
+.page_white_mode .under_header_block > p{
+    color: #151515;
+}
+
+.page_white_mode .udner_header_block_absolute{
+    background: url(assets/bg_elements/bike_white.svg);
+}
+
+.page_white_mode .under_header_block > button,
+.page_white_mode .first_offer_block > button{
+    border: 2px solid #151515;
+}
+
+.page_white_mode .black_mode{
+    background-color: #151515;
+    color: #f1f1f1;
+}
+
+.page_white_mode .white_mode{
+    background-color: transparent;
+    color: #151515;
+}
+
+.page_white_mode .scooter_block > h2{
+    color: #151515;
+}
+
+.page_white_mode .scooter_info_block > p:first-child{
+    color: #151515;
+}
+
+.page_white_mode .scooter_info_hr{
+    background-color: #151515;
+}
+
+.page_white_mode .scooter_info_block > p:not(:first-child){
+    color: #151515;
+}
+
+.page_white_mode .two_scooters_block > h5{
+    color: #151515;
+}
+
+.page_white_mode .security_container_block > div > p:last-child{
+    color: #151515;
+}
+
+.page_white_mode .security_container_block > div > p:first-child{
+    color: #151515;
+}
+
+.page_white_mode .security_container_block > div > hr{
+    background-color: #151515;
+ }
+
+.page_white_mode .security_container_block:hover > div > hr{
+   background-color: #ff4C0D;
+}
+
+.page_white_mode .first_donload_flex > p:nth-child(2){
+    color: #151515;
+}
+
+.page_white_mode .download_flex_block > .first_donload_flex > div > a:first-child > img{
+    background-image: url(assets/download_block/white_app_store.svg);
+}
+
+.page_white_mode .download_flex_block > .first_donload_flex > div > a:nth-child(2) > img{
+    background-image: url(assets/download_block/white_google_play.svg);
+}
+
+.page_white_mode .app_store{
+    background-image: url(assets/download_block/white_app_store.svg);
+}
+
+.page_white_mode .google_play{
+    background-image: url(assets/download_block/white_google_play.svg);
+}
+
+.page.app_store .app_store,.page.app_store .google_play{
+    transition: all .2s linear;
+}
+
+.page_white_mode .app_store:hover, .page_white_mode .google_play:hover{
+    filter:brightness(.55)
+}
+
+.page_white_mode .swiper.horizontal_swiper_2 > .swiper-wrapper > .swiper-slide{
+    background: #f1f1f1;
+}
+
+.page_white_mode .swiper-slide > .first_txt_in_swiper_2,
+.page_white_mode .swiper-slide > .second_txt_in_swiper_2{
+    color: #151515;
+}
+
+.page_white_mode .swiper-slide > .hr_in_swiper_2 {
+    background: #151515;
+}
+
+.page_white_mode .swiper-button-prev.swiper_svg_container {
+    background-color: #f1f1f1;
+}
+
+.page_white_mode .flex_block_in_swiper_2 > a {
+    background: #f1f1f1;
+}
+
+.page_white_mode .swiper-button-prev.swiper_svg_container:hover {
+    background-color: #FF4C0D;
+}
+
+.page_white_mode .first_ques_block > p {
+    color: #151515;
+}
+
+.page_white_mode .second_ques_block > .second_ques_block_container > p:nth-child(3) {
+    color: #151515;
+}
+
+.page_white_mode .second_ques_block > .second_ques_block_container > p:first-child {
+    color: #151515;
+}
+
+.page_white_mode .offer_block {
+    background-color: #f1f1f1;
+}
+
+.page_white_mode .first_offer_block > p:first-child {
+    color: #151515;
+}
+
+.page_white_mode .second_offer_block > .offer_list > li {
+    color: #151515;
+}
+
+.page_white_mode footer > div > p{
+    color: #151515;
+}
+
+.page_white_mode .offer_scoot {
+    background-image: url(assets/offer/scoot_white.png);
+}
+
+.page_white_mode .offer_scoot > img {
+    display: none;
+}

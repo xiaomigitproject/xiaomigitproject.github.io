@@ -26,7 +26,7 @@ const swiper = new Swiper('.horizontal_swiper', {
       direction: 'horizontal',
     },
 
-    450: {
+  600: {
       direction: 'vertical',
     }
     }
@@ -47,13 +47,15 @@ const swiper = new Swiper('.horizontal_swiper', {
     },
 
     breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        autoplay: true,
+        autoplay: {
+            delay: 4000,
+            disableOnInteracrion: false,
+        },
+
     },
 
     630: {

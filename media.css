@@ -44,6 +44,14 @@
         width: 1192px ;
         margin: 0 auto;
     }
+    
+    .downlaod_block > .wrapper.scooter > .download_bg_row{
+        display: unset;
+    }
+
+    .downlaod_block > .download_bg_row{
+        display: none;
+    }
 }
 
 @media (min-width: 1201px) and (max-width: 1300px){
@@ -939,7 +947,7 @@
     }
 
     .full_screen_block {
-        background-position-x: -559px;
+        background-position-x: -443px;
     }
 
     .two_scooters_block > h5 {
@@ -1182,13 +1190,29 @@
     footer > div:not(:first-child) > p {
         text-align: center;
     }
+
+    .swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets {
+        right: 45%;
+        top: 80%;
+        transform: rotate(90deg);
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 var(--swiper-pagination-bullet-horizontal-gap,8px);
+    }
+
+    .swiper-pagination-bullet {
+        width: var(--swiper-pagination-bullet-width,var(--swiper-pagination-bullet-size,10px));
+        height: var(--swiper-pagination-bullet-height,var(--swiper-pagination-bullet-size,10px));
+        display: inline-block;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 420px){
 
-    .pop_up_txt{
+    .popup_btn{
         display: block;
-    }    
+    } 
 
     .under_about_block_swiper > .wrapper{
         margin:  0 16px;
@@ -1262,7 +1286,7 @@
     .scooter_info_block > div{
         margin-top: 20px;
         display: flex;
-        width: 90%;
+        width: 100%;
     }
 
     .scooter_info_block > p:first-child,
@@ -1313,7 +1337,7 @@
     }
 
     .full_screen_block {
-        background-position-x: -559px;
+        background-position-x: -489px;
         margin-top: 70px;
     }
 
@@ -1378,7 +1402,7 @@
     }
 
     .security_container_block > div:not(:first-child){
-        width: 90%
+        width: 100%
     }
 
     .scooter_block_bg {
@@ -1553,7 +1577,9 @@
     }
 
     .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
-        bottom: 90px;
+        bottom: 10px;
+        right: 122%;
+        margin-top: 45px;
     }
 
     .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {

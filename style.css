@@ -147,8 +147,8 @@ body{
 .swiper-button-prev.swiper_svg_container:hover > svg > g > rect,
 .swiper-button-prev.swiper_svg_container:hover > svg > path,
 .swiper-button-prev.swiper_svg_container:hover{
-    fill: #F1F1F1;
     background-color: #FF4C0D;
+    fill: #F1F1F1;
 }
 
 .swiper-button-next.swiper_svg_container:hover > svg > g > rect,
@@ -267,95 +267,62 @@ body{
 /*========================== BURGER ========================*/
 
 /* ========================= POPUP =========================*/
-
-.popup{
-    width: 90%;
-    height: 100%;
-    position: fixed;
-    backdrop-filter: blur(5px);
-    background-color: none;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0;
-    visibility: hidden;
-    z-index: 120;
+ .popup_btn{
+     display: none;
     transition: all .3s linear;
-    margin: 0 auto;
-}
-
-.popup:target{
+    z-index: 1;
     opacity: 1;
-    visibility: visible;
-}
-
-.popup_body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100%;
-    text-align: center;
-}
-
-.popup_content{
-    width: 800px;
-    background-color: rgba(0, 0, 0, 0.9);
-    padding: 45px;
-    position: relative;
-}
-
-.popup_txt{
-    font-size: 16px;
-}
-
-.close{
-    position: absolute;
-    right: 0;
-    top: 0;
-    color: white;
-    background-color: rgb(20, 9, 87);
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    font-size: 14px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translate(10px, -10px);
-    transition: all .3s linear;
-}
-
-.popup_close_wherever{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    cursor: pointer;
-}
-
-.pop_up_txt{
-    display: none;
     margin-top: 10px;
     font-weight: bold;
     font-size: 16px;
     line-height: 150%;
     color: #F1F1F1;
+    position: relative;
+    transition: all .3s linear;
+}  
+
+.popup_btn.open{
+    opacity: 1;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 200vh;
     transition: all .3s linear;
 }
 
-.pop_up_txt:hover{
-   opacity: .6;
-}
-
-.popup_list{
+.popup_list.open{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    backdrop-filter: blur(5px);
+    background-color: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     font-size: 16px;
     line-height: 150%;
     color: #F1F1F1;
+    opacity: 1;
+    z-index: 0;
+    transition: all .3s linear;
 }
 
+.popup_list{
+    opacity: 0;
+    font-size: 0;
+    transition: all .3s linear;
+}
 
 /* ========================= POPUP =========================*/
 
@@ -413,10 +380,6 @@ header > div{
     align-items: center;
 }
 
-.header_nav > a.page_white_mode{
-    color: #151515;
-}
-
 .header_nav > a{
     font-size: 14px;
     line-height: 150%;
@@ -459,14 +422,6 @@ header > div{
     line-height: 100%;
     color: #F1F1F1;
 }
-/* 
-.under_header_block > h1.page_white_mode{
-    color: #FF4C0D;
-}
-
-.under_header_block > p.page_white_mode{
-    color: #151515;
-} */
 
 .under_header_block > p{
     font-weight: 600;
@@ -476,7 +431,6 @@ header > div{
     margin: 40px 0;
     width: 60%;
 }
-
 
 .wrapper.scooter.hidden{
     overflow: hidden;
@@ -492,30 +446,19 @@ header > div{
     background-repeat: no-repeat;
     width: 1200px;
     height: 800px;
-    
 }
 
 .wrapper.scooter > img{
     display: none;
 }
 
-.under_header_block > button{
+.under_header_block > button,
+.first_offer_block > button{
     border: 2px solid #f1f1f1;
     padding: 12px 0;
     border-radius: 180px;
     background: transparent;
-}
-
-.night_mode_block {
     cursor: pointer;
-    padding: 0;
-    background-color: transparent;
-    border: 2px solid #f1f1f1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 220px;
-    border-radius: 60px;
 }
 
 .white_mode,
@@ -525,25 +468,19 @@ header > div{
     line-height: 150%;
     padding: 16px 25px;
     border-radius: 60px;
+    transition: all .3s linear;
 }
   
-.black_mode {
+.black_mode{
     background-color: transparent;
     color: #f1f1f1;
+    transition: all .3s linear;
 }
   
-.white_mode {
+.white_mode{
     background-color: #f1f1f1;
     color: #151515;
-}
-  
-.page_white_mode .black_mode {
-    background-color: #f1f1f1;
-    color: #151515;
-}
-.page_white_mode .white_mode {
-    background-color: transparent;
-    color: #f1f1f1;
+    transition: all .3s linear;
 }
 /*====================== ABOUT_SCOOTER ====================*/
 
@@ -916,6 +853,7 @@ header > div{
 .under_secutiry_imgs > div{
     overflow: hidden;
     border-radius: 15px;
+    z-index: 15;
 }
 
 .under_secutiry_imgs > div > img{
@@ -953,14 +891,38 @@ header > div{
     z-index: 3;
 }
 
+.app_store{
+    background-image: url(assets/download_block/appstore.svg);
+    width: 120px;
+    height: 40px;
+}
+
+.google_play{
+    background-image: url(assets/download_block/googleplay.svg);
+    width: 135px;
+    height: 40px;
+}
+
+.app_store, .google_play{
+    border-radius: 5px;
+    transition: all .3s linear;
+}
+
+.app_store:hover, .google_play:hover{
+    filter:brightness(.75)
+}
+
 .download_bg_row{
     position: absolute;
-    z-index: 4;
+    z-index: -1;
     right: 0;
     top: -197px;
     overflow-x: hidden;
     width: 500px;
-    /* height: 486px; */
+}
+
+.downlaod_block > .wrapper.scooter > .download_bg_row{
+    display: none;
 }
 
 .bg_elipse_downlaod{
@@ -998,6 +960,7 @@ header > div{
 
 .first_donload_flex{
     width: 45%;
+    z-index: 50;
 }
 
 .first_donload_flex > p:first-child{
@@ -1218,14 +1181,10 @@ header > div{
     z-index: 15;
     width: 805px;
     height: 550px;
-    top: 0;
+    top: -10px;
     right: -100px;
     z-index: -1;
 }
-
-/* .offer_black_mode{
-    
-} */
 
 .first_offer_block{
    display: flex;
@@ -1248,39 +1207,6 @@ header > div{
     margin-bottom: 30px;
 }
 
-.first_offer_block > button:not(:last-child){
-    border: 2px solid #f1f1f1;
-    padding: 12px 0;
-    border-radius: 180px;
-    background: transparent;
-}
-
-.under_header_block > button{
-    border: 2px solid #f1f1f1;
-    padding: 12px 0;
-    border-radius: 180px;
-    background: transparent;
-}
-
-.white_mode,
-.black_mode {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 150%;
-    padding: 16px 25px;
-    border-radius: 60px;
-}
-  
-.black_mode {
-    background-color: transparent;
-    color: #f1f1f1;
-}
-  
-.white_mode {
-    background-color: #f1f1f1;
-    color: #151515;
-}
-
 .buy_offer{
     cursor: pointer;
     margin-top: 150px;
@@ -1296,15 +1222,6 @@ header > div{
 
 .buy_offer:hover{
     background: rgba(255, 78, 13, 0.5);
-}
-
-.offer_black_mode .black_mode {
-    background-color: #f1f1f1;
-    color: #151515;
-}
-.offer_black_mode .white_mode {
-    background-color: transparent;
-    color: #f1f1f1;
 }
 
 .second_offer_block{
@@ -1325,6 +1242,7 @@ header > div{
     color: #FFFFFF;
     margin-top: 10px;
 }
+
 
 
 /* =========================== FOOTER ============ */
