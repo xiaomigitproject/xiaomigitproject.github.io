@@ -22,6 +22,8 @@
 
 .page_white_mode .udner_header_block_absolute{
     background: url(assets/bg_elements/bike_white.svg);
+    background-repeat: no-repeat;
+    top: 0;
 }
 
 .page_white_mode .under_header_block > button,
@@ -162,4 +164,19 @@
 
 .page_white_mode .offer_scoot > img {
     display: none;
+}
+
+.page_white_mode .black_bike_in_header{
+    display: none;
+}
+
+.udner_header_block_absolute {
+    position: absolute;
+    right: -200px;
+    top: -442px;
+    z-index: 2;
+    background: url(assets/bg_elements/bike.svg);
+    background-repeat: no-repeat; 
+    width: 1200px;
+    height: 1251px;
 }

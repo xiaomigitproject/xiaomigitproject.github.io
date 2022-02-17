@@ -448,7 +448,18 @@ header > div{
     height: 800px;
 }
 
-.wrapper.scooter > img{
+.black_bike_in_header,
+.white_bike_in_header{
+    position: absolute;
+    right: 0;
+    transform: translate(230px, -55px);
+}
+
+.white_bike_in_header{
+    display: none;
+}
+
+.black_bike_in_header{
     display: none;
 }
 
@@ -468,19 +479,20 @@ header > div{
     line-height: 150%;
     padding: 16px 25px;
     border-radius: 60px;
-    transition: all .3s linear;
 }
   
 .black_mode{
     background-color: transparent;
     color: #f1f1f1;
-    transition: all .3s linear;
 }
   
 .white_mode{
     background-color: #f1f1f1;
     color: #151515;
-    transition: all .3s linear;
+}
+
+button:focus-visible{
+    background: transparent;
 }
 /*====================== ABOUT_SCOOTER ====================*/
 
@@ -1146,7 +1158,6 @@ header > div{
     height: 500px;
     background-color: #151515;
     border-radius: 15px;
-    /* border-top-right-radius: 78px; */
     position: relative;
     z-index: 5;
     overflow: hidden;
@@ -1174,7 +1185,6 @@ header > div{
 }
 
 .offer_scoot{
-    /* background-image: url(assets/offer/scoot.png); */
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
